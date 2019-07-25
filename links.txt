@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=SpyVEbFQ6Bc for ajax & php data update with modal
+https://www.youtube.com/watch?v=eccVotVxzgI for live table data update with tabledit
+

@@ -1,3 +1,23 @@
 https://www.youtube.com/watch?v=SpyVEbFQ6Bc for ajax & php data update with modal
 https://www.youtube.com/watch?v=eccVotVxzgI for live table data update with tabledit
 
+count=select count(*) from head;
+head=select head_id from head;
+$res=mysqli_query(head);
+while($row=mysqli_fetch_assoc($res))
+{
+  select name from head where id=$row['head'];
+  select count(*) from emp where head_id=$row['head'];
+  select count(*) from emp where head_id=$row['head'];
+  select count(*) from emp where head_id=$row['head'];
+}
+
+sql query :-
+
+    SELECT
+	(select name from head where head.id=1)as 'name',
+    (SELECT COUNT(*) FROM emp  where emp.head_id=1) AS 'total',
+
+    (SELECT COUNT(*) FROM emp where emp.head_id=1 AND is_nilambit=0 ) AS 'working',
+
+    (SELECT COUNT(*) FROM emp where emp.head_id=1 and is_nilambit=1) AS 'empty';
